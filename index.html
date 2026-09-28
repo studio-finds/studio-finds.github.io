@@ -4,6 +4,10 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>STUDIO FINDS</title>
+  <meta
+    name="description"
+    content="STUDIO FINDS is a curated editorial project focused on creative workspaces, objects, tools and everyday design."
+  >
   <style>
     body {
       margin: 0;
@@ -11,29 +15,45 @@
       color: #111;
       font-family: Arial, Helvetica, sans-serif;
     }
+
     main {
       max-width: 760px;
       margin: 0 auto;
-      padding: 80px 32px;
+      padding: 80px 32px 120px;
     }
+
     h1 {
       font-size: 32px;
       letter-spacing: .18em;
-      margin-bottom: 48px;
+      margin: 0 0 48px;
     }
+
     h2 {
       margin-top: 48px;
       font-size: 18px;
     }
-    p {
+
+    p, li {
       line-height: 1.8;
-      max-width: 640px;
     }
+
+    ul {
+      padding-left: 22px;
+    }
+
     a {
       color: inherit;
     }
+
+    .footer {
+      margin-top: 64px;
+      padding-top: 24px;
+      border-top: 1px solid #aaa;
+      font-size: 14px;
+    }
   </style>
 </head>
+
 <body>
   <main>
     <h1>STUDIO FINDS</h1>
@@ -46,20 +66,66 @@
     <h2>Studio Finds Publisher</h2>
 
     <p>
-      Studio Finds Publisher is an internal publishing tool used
-      by the owner of the STUDIO FINDS Pinterest business account.
-      It supports the preparation and publishing of approved Pins
-      to STUDIO FINDS boards.
+      Studio Finds Publisher is a private internal publishing tool
+      used only by the owner of the STUDIO FINDS Pinterest business account.
+      It is not offered as a service to third-party users.
+    </p>
+
+    <h2>What the application does</h2>
+
+    <p>
+      The application supports the editorial workflow for STUDIO FINDS
+      and assists with publishing approved organic image Pins.
+    </p>
+
+    <ul>
+      <li>
+        The owner manually selects the product or subject to publish.
+      </li>
+      <li>
+        The owner reviews the final image, Pin title, description,
+        destination URL and destination board before publishing.
+      </li>
+      <li>
+        Pinterest board information is requested from the Pinterest API
+        only when needed to identify the selected destination board.
+      </li>
+      <li>
+        One Pin is created only after the owner explicitly approves
+        that individual publication.
+      </li>
+    </ul>
+
+    <h2>Pinterest API use</h2>
+
+    <p>
+      Studio Finds Publisher accesses only the authenticated
+      STUDIO FINDS Pinterest account.
     </p>
 
     <p>
-      The application is for internal use only and is not offered
-      to third-party users.
+      It does not access or manage other Pinterest users' accounts,
+      does not collect Pinterest usernames or passwords,
+      does not scrape Pinterest, and does not use Pinterest API data
+      to train or improve artificial intelligence or machine learning models.
     </p>
 
     <p>
-      <a href="/privacy.html">Privacy Policy</a>
+      Pinterest information obtained through the API is not persistently
+      stored by the application. When Pinterest information is needed,
+      it is requested again from the Pinterest API.
     </p>
+
+    <p>
+      Authentication is performed through Pinterest's supported
+      authorization process.
+    </p>
+
+    <div class="footer">
+      <p>
+        <a href="/privacy.html">Privacy Policy</a>
+      </p>
+    </div>
   </main>
 </body>
 </html>
